@@ -25,8 +25,7 @@ example: this is a template <color=red>Red</color>
 
 The text AFTER the first colon is sent exactly as the template message,
 including EHR/Among Us rich-text tags such as <color=red>...</color>.
-The template name is REQUIRED; the plugin does not interpret template names
-as gamemodes and does not search for gamemode names.
+The template name is REQUIRED!
 
 DEFAULT CHAT CONFIG
 -------------------
@@ -74,6 +73,5 @@ Supported placeholders in template text and additional info:
 {slot} = selected physical slot number
 \n = newline
 
-Templates are read fresh when a preset is switched, so editing EHR's
-template.txt does not require rebuilding the DLL.
+Templates are read fresh when a preset is switched.
 

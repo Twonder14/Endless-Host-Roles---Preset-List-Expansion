@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>preview</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>EHRPresetReload</AssemblyName>
+    <RootNamespace>EHRPresetReload</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AmongUs.GameLibs.Steam" Version="2026.6.5" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.IL2CPP.MSBuild" Version="2.1.0-rc.1" />
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.735" Private="false" ExcludeAssets="runtime;native" />
+  </ItemGroup>
+</Project>

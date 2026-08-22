@@ -1,0 +1,79 @@
+<Page x:Class="CustomTeamAssigner.PresetListsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="#1C1C1C">
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="EHR Preset Lists"
+                   Foreground="LightGray"
+                   FontSize="38"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"/>
+
+        <TextBlock Grid.Row="1"
+                   x:Name="CurrentText"
+                   Foreground="LightGray"
+                   FontSize="17"
+                   Margin="0,10"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"/>
+
+        <WrapPanel Grid.Row="2"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,10">
+            <Button x:Name="RandomButton"
+                    Content="Random"
+                    Width="120"
+                    Height="45"
+                    Margin="5"
+                    Click="Random_Click"/>
+            <Button x:Name="SyncButton"
+                    Content="Sync"
+                    Width="120"
+                    Height="45"
+                    Margin="5"
+                    Click="Sync_Click"/>
+            <Button x:Name="ChatButton"
+                    Content="Edit Chat"
+                    Width="120"
+                    Height="45"
+                    Margin="5"
+                    Click="EditChat_Click"/>
+            <Button x:Name="ValidateButton"
+                    Content="Validate"
+                    Width="120"
+                    Height="45"
+                    Margin="5"
+                    Click="Validate_Click"/>
+            <Button x:Name="BackButton"
+                    Content="Back"
+                    Width="120"
+                    Height="45"
+                    Margin="5"
+                    Click="Back_Click"/>
+        </WrapPanel>
+
+        <ScrollViewer Grid.Row="3"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+            <WrapPanel x:Name="PresetPanel"
+                        HorizontalAlignment="Center"/>
+        </ScrollViewer>
+
+        <TextBlock Grid.Row="4"
+                   x:Name="StatusText"
+                   Foreground="LightGray"
+                   FontSize="14"
+                   TextWrapping="Wrap"
+                   HorizontalAlignment="Center"
+                   Margin="0,12,0,0"/>
+    </Grid>
+</Page>

@@ -12,14 +12,14 @@ namespace EHRPresetReload;
 public sealed class PresetReloadPlugin : BasePlugin
 {
     public const string PluginGuid = "com.tbuddy5.ehrpresetreload";
-    public const string PluginVersion = "4.0.1";
+    public const string PluginVersion = "1.0.0";
 
     public override void Load()
     {
         ClassInjector.RegisterTypeInIl2Cpp<PresetReloadBehaviour>();
         AddComponent<PresetReloadBehaviour>();
 
-        Log.LogInfo("EHR Preset Reload 4.0.1 loaded.");
+        Log.LogInfo("EHR Preset Reload 1.0.0 loaded.");
         Log.LogInfo("Options reload uses EHR.Modules.OptionSaver.Load().");
         Log.LogInfo("English reload uses EHR.Translator.LoadLangs().");
         Log.LogInfo("Preset announcements support EHR template.txt templates.");
